@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Club - Rangers Football Club</title>
+    <link rel="shortcut icon" href="../img/Rangers.png">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <a href="../index.html">
+        <img id="logo" src="/img/Rangers.png" alt="Logo de rangers" width="400" height="300">
+    </a>
+    <nav class="botonera">
+        <ul class="zoom">
+            <li>
+                <a href="../index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="../Pages/otros_deportes.html">Otros deportes</a>
+            </li>
+            <li>
+                <a href="../Pages/Ranger_shop.html">Ranger shop</a>
+            </li>
+            <li>
+                <a href="../Pages/El_Club.html">El Club</a>
+            </li>
+            <li>
+                <a href="../Pages/Registrarse.html">Registrarse</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <header class="rotate">
+        <img class="encabezado__img--fluid " src="../img/registrate.jpeg" alt="Hinchas" width="1200" height="700">
+        <h1 class="titulos">¿Queres ser socio del Rangers? Registrate</h1>
+    </header>
+
+
+    <main>
+        <h2 class="font_white">Registrarse</h2>
+        <form action="" method="post" id="Registrarse">
+            <fieldset class="font_white bg-black">
+                <legend class="pading-bt"> Datos personales</legend>
+                <label for="nombre">Nombre</label>
+
+                <input type="text" name="nombre" id="nombre" placeholder="">
+
+                <label for="email">Email</label>
+
+                <input type="email" name="email" id="email" placeholder="mail@algo.com">
+
+                <label for="DNI">DNI</label>
+
+                <input type="number" name="DNI" id="DNI">
+
+                <label for="Telefono">Telefono</label>
+
+                <input type="tel" name="Telefono" id="Telefono">
+
+                <label for="Direccion">Direccion</label>
+
+                <input type="text" name="Direccion" id="Direccion">
+
+                <label for="localidad">Localidad</label>
+                <select name="localidad" id="localidad">
+						<option value="caba">CABA</option>
+						<option value="bsas">Buenos Aires</option>
+						<option value="interior">Interior del país...</option>
+					</select>
+
+
+                <label for="Provincia">Provincia</label>
+                <select name="Provincia" id="Provincia">
+						<option value="Buenos Aires">Buenos Aires</option>
+						<option value="Cordoba">Cordoba</option>
+						<option value="Santa Fe">Santa fe</option>
+						<option value="Otra">Otra</option>
+					</select>
+            </fieldset>
+            <fieldset class="font_white bg-black">
+                <legend class="pading-bt">¿A traves de que medio prefiere que nos comuniquemos con usted? (Puede elegir mas de uno)</legend>
+                <label for="Email">Email</label>
+                <input type="checkbox" value="email" id="email">
+
+                <label for="Telefono">Telefono</label>
+                <input type="checkbox" value="Telefono" id="Telefono">
+
+                <label for="Whatsapp">Telefono</label>
+                <input type="checkbox" value="Whatsapp" id="Whatsapp">
+            </fieldset>
+            <fieldset class="font_white bg-black ">
+                <legend class="pading-bt">Entrega del carnet de socio</legend>
+                <label for="local">Retira en el estadio</label>
+                <input type="radio" id="local" value="local" name="entrega">
+
+                <label for="envio">Envío a domicilio</label>
+                <input type="radio" id="envio" value="envio" name="entrega">
+
+
+            </fieldset>
+
+
+
+
+            <label class="font_white" for="mensaje">En caso de haber elegido recibir el carnet en su domicilio, deje una breve descripcion del frente de su casa</label>
+
+            <textarea cols="30" rows="4"></textarea>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Cancelar">
+
+            <section>
+                <h2 class="titulos">Ubicacion del estadio</h2>
+
+
+                <!-- inicia mapa -->
+                <iframe class="padding-maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8958.188790247885!2d-4.3092686!3d55.853172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff43846aa29e2690!2sIbrox%20Stadium!5e0!3m2!1ses-419!2sar!4v1652891641848!5m2!1ses-419!2sar"
+                    frameborder="0px" width="2400" height="600"></iframe>
+                <!-- ends maps -->
+
+            </section>
+        </form>
+
+        <!-- ends form -->
+
+
+    </main>
+
+
+
+
+
+    <footer id="footer" class="footer">
+        <h2>Seguinos en nuestras Redes sociales</h2>
+        <div class="pie">
+            <a href="https://www.instagram.com/rangersfc/" target="_blank">
+                <img class="zoom" src="../img/Instagram.png" alt="Instagram" width="100" height="100">
+            </a>
+            <a href="https://twitter.com/RangersFC" target="_blank">
+                <img class="zoom" src="../img/Tw.png" alt="twitter" width="100" height="100">
+            </a>
+            <a href="https://www.facebook.com/rangersfc/" target="_blank">
+                <img class="zoom" src="../img/fb.png" alt="Facebook" width="100" height="100">
+            </a>
+        </div>
+
+
+        <h4>Si queres recibir las ultimas noticias del club y mantenerte siempre informado suscribite a nuestro newsletter!! Dejanos tu mail y no te pierdas de nada</h4>
+
+        <fieldset>
+            <legend class="font_white">Email para suscribirte</legend>
+            <label class="font_white" for="Email">Email</label>
+            <input type="Email" name="Email" id="Email">
+        </fieldset>
+    </footer>
+
+
+</body>
+
+</html>
