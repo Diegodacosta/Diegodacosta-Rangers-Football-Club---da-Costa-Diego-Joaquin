@@ -1,449 +1,60 @@
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
- * {
-     margin: 0;
-     padding: 0;
-     font-size: 62, 5%;
+ @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+ .bg-blue {
+     background-color: #0033a0e0;
  }
  
- .padding-center {
+ .nav-right {
      display: flex;
-     padding: 0 450px;
+     align-items: flex-end;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 0 20px;
  }
  
- .titulos {
-     color: rgb(255, 255, 255);
-     font-family: 'Roboto', sans-serif;
-     font-size: 3rem;
-     text-align: center;
-     padding: 50px 20px;
-     margin: 20px 20px;
+ .font-w {
+     font-family: 'Raleway', sans-serif;
+     font-size: 1.5rem;
+     font-weight: normal;
+     color: aliceblue;
  }
  
- h3 {
-     font-family: 'Roboto', sans-serif;
-     font-size: 2rem;
+ .font-b {
+     font-family: 'Raleway', sans-serif;
+     font-size: 1.8rem;
      font-weight: bold;
- }
- /* grid */
- 
- .contenedor {
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: repeat(8, auto);
-     grid-template-areas: "logo ""nav" "header" "titulo" "section" "section2" "aside" "footer";
+     color: black;
  }
  
- #header {
-     grid-area: header;
+ .f-xl {
+     font-family: 'Roboto', sans-serif;
+     color: aliceblue;
+     font-weight: bold;
+     font-size: 4rem;
  }
  
- #titulo {
-     grid-area: titulo;
- }
- 
- #nav {
-     grid-area: nav;
- }
- 
- #section {
-     grid-area: section;
- }
- 
- #section2 {
-     grid-area: section2;
- }
- 
- #aside {
-     grid-area: aside;
+ #botonera ul li a {
+     color: aliceblue;
+     font-size: 1.5rem;
+     font-family: 'Raleway', sans-serif;
  }
  
  #footer {
-     grid-area: footer;
-     background-color: #1d293e;
+     background-color: #2d3b55;
  }
  
- #logo {
-     grid-area: logo;
-     width: 165px;
-     height: 110px;
-     text-align: left;
-     margin-bottom: 30px;
-     padding-left: 39px;
-     padding-top: 25px;
+ .bg-bluew {
+     background-color: #1772bc7d;
  }
  
- .botonera {
-     background: linear-gradient(to right, #0033a0, #f7f7f8);
-     /*position*/
-     top: 0;
-     /*padding*/
-     padding: 10px 30px;
-     /****display flex****/
-     display: block;
-     flex-direction: column;
-     align-items: left;
-     list-style: none;
-     text-decoration: none;
+ .zoom {
+     transition: transform .2s;
  }
  
- .botonera ul li a {
-     font-size: 1.8rem;
-     text-decoration: none;
-     color: #ffffff;
-     font-family: 'Roboto', sans-serif;
-     list-style: none;
-     text-align: center;
- }
- /*hover*/
- 
- .botonera ul li a:hover {
-     color: black;
-     font-weight: 600;
-     list-style: none;
- }
- 
- body {
-     background: linear-gradient(to right, #0033a0, #f7f7f8);
-     box-sizing: border-box;
- }
- 
- .encabezado__img--fluid {
-     width: 100%;
- }
- 
- .contenedor1 {
-     display: flex;
- }
- 
- .color-white {
-     color: rgb(255, 255, 255);
-     font-family: 'Roboto', sans-serif;
-     font-size: 2rem;
-     text-align: center;
-     padding-top: 40px;
- }
- 
- .pading-n {
-     padding: 30px 0px;
-     text-align: center;
- }
- 
- .pading-bt {
-     padding-bottom: 30px;
- }
- 
- .img-padding {
-     width: 97%;
-     align-content: space-between;
-     padding-left: 30px;
- }
- 
- #font_figure {
-     font-size: 2rem;
-     color: black;
-     font-family: 'Roboto', sans-serif;
- }
- 
- #pb {
-     padding-bottom: 70px;
- }
- 
- .padding-maps {
-     padding-left: 400px;
-     padding-bottom: 70px;
-     width: 100vh;
- }
- 
- .justify-content {
-     justify-content: space-around;
- }
- 
- .font_white {
-     font-family: 'Roboto', sans-serif;
-     color: aliceblue;
- }
- 
- .listasDeportes {
-     font-family: 'Roboto', sans-serif;
-     color: white;
-     background-color: green;
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     padding-top: 60px;
-     padding-bottom: 60px;
- }
- 
- .padding.sm {
-     padding-bottom: 50px;
- }
- 
- .rotate :hover {
-     transform: rotateZ(360deg);
-     cursor: pointer;
-     transition: 0.5s;
- }
- 
- .footer {
-     background-color: #1d293e;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
- 
- footer h2 {
-     font-family: 'Roboto', sans-serif;
-     color: aliceblue;
-     text-align: center;
- }
- 
- footer h4 {
-     font-family: 'Roboto', sans-serif;
-     color: aliceblue;
- }
- /* min-width: 768px */
- 
- @media (min-width: 768px) {
-     .contenedor {
-         display: grid;
-         grid-template-columns: 65% 35%;
-         grid-template-rows: repeat(6 auto);
-         grid-template-areas: "logo nav" "header header" "titulo titulo" "section section" "aside section2" "footer footer";
-     }
-     .botonera {
-         display: flex;
-         margin: 0 32px 0 0;
-         height: 60px;
-         justify-self: flex-end;
-         padding-top: 25px;
-         background-color: #0033a0;
-         justify-content: space-between;
-     }
-     .botonera ul {
-         /****display flex****/
-         display: flex;
-         margin-right: 24px;
-         padding-left: 24px;
-         height: 100px;
-         list-style: none;
-     }
-     .botonera ul li {
-         margin-top: 0;
-         margin-left: 30px;
-         height: 100%;
-     }
-     .botonera ul li a {
-         font-size: 1.8rem;
-         text-decoration: none;
-         color: #ffffff;
-         font-family: 'Roboto', sans-serif;
-         list-style: none;
-         text-align: center;
-     }
-     #img-size {
-         padding-left: 40px;
-         width: 95%;
-     }
-     .contenedor1 {
-         display: flex;
-         background-color: #021329;
-         justify-content: space-between;
-         align-items: center;
-         flex-direction: row;
-         box-sizing: border-box;
-         align-content: space-around;
-         padding-right: 80px;
-     }
-     .zoom {
-         transition: transform .2s;
-     }
-     .zoom:hover {
-         -ms-transform: scale(1.1);
-         /* IE 9 */
-         -webkit-transform: scale(1.1);
-         /* Safari 3-8 */
-         transform: scale(1.1);
-     }
-     .flex-wrap {
-         flex-wrap: wrap;
-     }
-     .tamano-pie {
-         text-align: left;
-         width: auto;
-         height: auto;
-     }
-     .pie-pad {
-         display: initial;
-         flex-direction: row;
-     }
-     #pie {
-         background-color: #1d293e;
-         display: flex;
-     }
-     .footer {
-         background-color: #1d293e;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-     }
- }
- /*  min-width: 1024px */
- 
- @media (min-width: 1024px) {
-     .contenedor {
-         display: grid;
-         grid-template-columns: 65% 35%;
-         grid-template-rows: repeat(6 auto);
-         grid-template-areas: "logo nav" "header header" "titulo titulo" "section section" "aside section2" "footer footer";
-     }
- }
- /* * Ranger Shop */
- 
- #section-rangers .galeria {
-     height: 300px;
-     display: grid;
-     grid-template-columns: auto auto auto auto;
-     gap: 10px;
-     background-color: #2196F3;
-     padding: 10px;
-     grid: 100px / auto auto auto;
- }
- 
- .grid-container {
-     display: grid;
-     grid-template-columns: auto auto auto auto;
-     gap: 10px;
-     padding: 10px;
- }
- /*
-            /* #grilla Ranger shop 
-         */
- 
- #contenedor-rangers {
-     display: grid;
-     grid-template-columns: 1fr;
-     grid-template-rows: repeat(6 auto);
-     grid-template-areas: "nav2" "header2" "titulo2" "aside2" "section2" "footer2";
- }
- 
- .grid-item {
-     background-color: rgba(255, 255, 255, 0.8);
-     border: 1px solid rgba(0, 0, 0, 0.8);
-     padding: 20px;
-     font-size: 30px;
-     text-align: center;
- }
- 
- #header-rangers {
-     grid-area: header2;
- }
- 
- #titulo-rangers {
-     grid-area: titulo2;
- }
- 
- #nav-rangers {
-     grid-area: nav2;
- }
- 
- #section-rangers {
-     grid-area: section2;
- }
- 
- #aside-rangers {
-     grid-area: aside2;
- }
- 
- #footer-rangers {
-     grid-area: footer2;
- }
- 
- #section-rangers .galeria {
-     display: flex;
-     margin: 20px;
-     justify-content: space-between;
-     padding-bottom: 200px;
- }
- 
- #section-rangers .galeria figure {
-     text-align: center;
- }
- 
- #section-rangers .galeria figure figcaption {
-     font-size: 2.5rem;
-     color: azure;
-     padding: 10px 0;
-     font-family: 'Roboto', sans-serif;
- }
- 
- #contenedor-RS .galeria figure p {
-     font-size: 1.5rem;
-     color: rgb(238, 238, 238);
-     padding: 10px 0;
-     font-family: 'Roboto', sans-serif;
- }
- 
- .bg-white {
-     font-family: 'Roboto', sans-serif;
-     font-size: 1.5rem;
-     padding-bottom: 70px;
- }
- 
- .bg-black {
-     background-color: #1d293e;
- }
- 
- @media (min-width: 768px) {
-     #contenedor-rangers {
-         display: grid;
-         grid-template-columns: 20% 80%;
-         grid-template-rows: repeat(5 auto);
-         grid-template-areas: "logo nav2" "header2 header2" "titulo2 titulo2" "aside2 section2" "footer2 footer2";
-     }
-     .galeria {
-         grid-template-areas: "div1" "div2" "div3";
-     }
-     #div1 {
-         grid-area: div1;
-     }
-     #div2 {
-         grid-area: div2;
-     }
-     #div3 {
-         grid-area: div3;
-     }
-     #section-rangers .galeria {
-         flex-direction: row;
-         justify-content: space-between;
-     }
- }
- 
- @media (min-width: 1024px) {
-     #contenedor-rangers {
-         display: grid;
-         grid-template-columns: 20% 80%;
-         grid-template-rows: repeat(5 auto);
-         grid-template-areas: "logo nav2" "header2 header2 " "titulo2 titulo2" "aside2 section2" "footer2 footer2";
-     }
-     .galeria {
-         display: grid;
-         grid-column: 33% 33% 33%;
-         grid-template-rows: repeat(3 auto);
-         grid-template-areas: "div1" "div2" "div3";
-     }
-     #div1 {
-         grid-area: div1;
-     }
-     #div2 {
-         grid-area: div2;
-     }
-     #div3 {
-         grid-area: div3;
-     }
-     #section-rangers .galeria figure {
-         display: flex;
-         justify-content: center;
-         flex-direction: row;
-         width: 70%;
-     }
+ .zoom:hover {
+     -ms-transform: scale(1.1);
+     /* IE 9 */
+     -webkit-transform: scale(1.1);
+     /* Safari 3-8 */
+     transform: scale(1.1);
  }

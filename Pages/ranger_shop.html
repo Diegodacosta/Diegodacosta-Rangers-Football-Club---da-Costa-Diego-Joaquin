@@ -2,129 +2,278 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Club - Rangers Football Club</title>
-    <link rel="shortcut icon" href="../img/Rangers.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="/img/Rangers.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Mi css -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>Rangers Football Club</title>
 </head>
+
 
 
 <body>
 
+    <!-- Inicio nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue" id="botonera">
+        <div class="container-fluid nav-right">
+            <a href="index.html">
+                <img id="logo" src="/img/Rangers.png" alt="Logo de rangers" width="400" height="300">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse nav-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Club</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Otros deportes
+                </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" style="background-color: #0033a0;" href="#">Voley</a></li>
+                            <li><a class="dropdown-item " style="background-color: #0033a0;" href="#">Basquet</a></li>
+                            <li><a class="dropdown-item " style="background-color: #0033a0;" href="#">Hockey</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Pages/ranger_shop.html">Rangers Shop</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registrarse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin nav -->
+
+    <!-- Inicio carrusel -->
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/primera equipacion.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/segunda equipacion.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/img/tercera equipacion.webp" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
 
 
-    <a href="index.html">
-        <img id="logo" src="/img/Rangers.png" alt="Logo de rangers" width="400" height="300">
+    <!-- Fin carrusel -->
 
 
-        <nav id="nav" class="botonera">
-            <!--barra de navegacion-->
+    <main>
+
+        <div class="container-fluid">
+            <section class="row py-2 ">
+                <article class="col-md-3 ">
+                    <h2 class="text-center mt-4">Filtros</h2>
+                    <ul class="font-b">
+                        <li>Camisetas(10)</li>
+                        <li>Hoodies(4)</li>
+                        <li>Camperas(2)</li>
+                        <li>Shorts(3)</li>
+                        <li>Arquero(2)</li>
+                        <li>Pantalones(1)</li>
+                    </ul>
 
 
+                </article>
+                <article class="col-md-3 zoom glyphicon glyphicon-shopping-cart">
 
-            <ul class="zoom">
-                <li>
-                    <a href="/index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="/Pages/otros_deportes.html">Otros deportes</a>
-                </li>
-                <li>
-                    <a href="/Pages/ranger_shop.html">Ranger   shop</a>
-                </li>
-                <li>
-                    <a href="/Pages/el_club.html"> Club</a>
-                </li>
-                <li>
-                    <a href="/Pages/registrarse.html">Registrarse</a>
-                </li>
-            </ul>
-        </nav>
+                    <img src="/img/Camiseta titular.jpg" alt="" class="w-100 img-thumbnails rounded-2">
+                    <p class="text-center font-b">Camiseta titular 21/22</p>
+                    <p class="text-center font-b">€80,00</p>
 
-        <header class="rotate" id="header-rangers">
-            <!--encabezado-->
-            <img class="encabezado__img--fluid " src="../img/Store.jpg" alt="Rangers shop">
+                </article>
+                <article class="col-md-3 zoom">
 
-        </header>
+                    <img src="/img/camiseta suplente.jpg " alt="" class="w-100 img-thumbnails rounded-2">
+                    <p class="text-center font-b">Camiseta suplente 21/22</p>
+                    <p class="text-center font-b">€50,00</p>
 
 
-        <h1 id="titulo-rangers" class="titulos">Kits temporada 21/22</h1>
-        <!--titulo principal de la pagina-->
+                </article>
+
+                <article class="col-md-3 zoom">
+
+                    <img src="/img/Camiseta arquero.jpg" alt="" class="w-100 img-thumbnails rounded-2">
+                    <p class="text-center font-b">Camiseta de arquero 21/22</p>
+                    <p class="text-center font-b">€90,00</p>
 
 
+                </article>
 
-        <main>
+                <article class="col-md-3 zoom">
+
+                </article>
+
+                <article class="col-md-3 zoom">
+
+                    <img src="/img/retro.webp" alt="" class="w-100 img-thumbnails rounded-2">
+                    <p class="text-center font-b">Camiseta retro copa de Europa 1984</p>
+                    <p class="text-center font-b">€120,00</p>
 
 
+                </article>
 
-            </ul>
+                <article class="col-md-3 zoom">
 
-            <section class="grid-container">
-                <!--Todas las camisetas-->
-                <div class="grid-item zoom">
-                    <b id="aside-rangers" class="bg-white">Indumentaria</b>
-                    <ul class="bg-white">
-                        <li class="liNav">CAMISETAS (7 )</li>
-                        <li class="liNav">PANTALONES (10 )</li>
-                        <li class="liNav">BUZOS (1 )</li>
-                        <li class="liNav">CAMPERAS (1 )</li>
-                        <li class="liNav">ACCESORIOS (1 )</li>
-                </div>
-                <div class="grid-item zoom">
-                    <img class="img-padding" src="../img/Camiseta titular.jpg" alt="Camiseta titular" width="500" height="400">
-                    <h3 class="font_figure">Camiseta titular 21/22</h3>
-                    <p id="font-figure">$4.500,00</p>
-                </div>
-                <div class="grid-item zoom">
-                    <img class="img-padding" src="../img/camiseta suplente.jpg" alt="camiseta suplente" width="400" height="400">
-                    <h3 id="font_figure"> Camiseta suplente 21/22</h3>
-                    <p id="font-figure">$4.300,00</p>
-                </div>
-                <div class="grid-item zoom">
-                    <img class="img-padding" src="../img/Camiseta arquero.jpg" alt="camiseta arquero" width="400" height="400">
-                    <h3 id="font_figure">Camiseta suplente 21/22</h3>
-                    <p id="font-figure">$4.300,00</p>
-                </div>
+                    <img src="/img/retro2.webp" alt="" class="w-100 img-thumbnails rounded-2">
+                    <p class="text-center font-b">Camiseta retro Champions 1971</p>
+                    <p class="text-center font-b">€130,00</p>
+
+
+                </article>
+
+                <article class="col-md-3 zoom">
+
+                    <img src="/img/kit completo.webp" alt="" class="w-100 img-thumbnails rounded-2">
+                    <p class="text-center font-b">Kit completo temporada 21/22</p>
+                    <p class="text-center font-b">€180,00</p>
+
+
+                </article>
+
+
+                </article>
+
+                <article class="col-md-3 zoom">
+
+                </article>
+
+                <article class="col-md-3 zoom">
+
+                    <img src="/img/baby.webp" alt="" class="w-100 img-thumbnails rounded-2">
+                    <p class="text-center font-b">Tutu Bebe temporada 21/22</p>
+                    <p class="text-center font-b">€90,00</p>
+
+
+                </article>
+
+
+                <article class="col-md-3 zoom">
+
+                    <img src="/img/pantalon.webp" alt="" class="w-100 img-thumbnails rounded-2">
+                    <p class="text-center font-b">Short arquero 21/22</p>
+                    <p class="text-center font-b">€30,00</p>
+
+                </article>
+
+                <article class="col-md-3 zoom">
+
+                    <img src="/img/buzo.webp" alt="" class="w-100 img-thumbnails rounded-2">
+                    <p class="text-center font-b">Buzo entrenamiento 21/22</p>
+                    <p class="text-center font-b">€70,00</p>
+
+
+                </article>
+
+                </article>
+
+                <article class="col-md-3 zoom">
+
+                </article>
+
+                <article class="col-md-3 zoom">
+
+                    <img src="/img/buzo2.webp" alt="" class="w-100 img-thumbnails rounded-2">
+                    <p class="text-center font-b">Buzo entrenamiento arquero 21/22</p>
+                    <p class="text-center font-b">€90,00</p>
+
+
+                </article>
+
             </section>
 
 
+        </div>
 
-        </main>
+
+        <section></section>
 
 
-        <footer id="footer-rangers" class="footer">
-            <!--pie de pagina-->
-            <h2>Seguinos en nuestras Redes sociales</h2>
-            <div class="pie">
-                <a href="https://www.instagram.com/rangersfc/" target="_blank">
-                    <img src="../img/Instagram.png" alt="Instagram" class="zoom" width="100" height="100">
+    </main>
+
+    <!-- inicio footer -->
+
+    <footer id="footer">
+        <div class="row col-md-12 ">
+
+
+            <span class="font-w text-center pb-5">Oficial Partners</span>
+
+            <div class="text-center pb-5 ">
+                <a href="" target="_blank ">
+                    <img src="https://images.ctfassets.net/39646iezddpk/683fKcmXIZSqabvQ8wudOW/24903abfc7780fa9207be8b8b861e9d8/_white_Castore.png" alt="white Castore">
                 </a>
-                <a href="https://twitter.com/RangersFC" target="_blank">
-                    <img src="../img/Tw.png" alt="twitter" class="zoom" width="100" height="100">
+                <a href="" target="_blank ">
+                    <img src="https://images.ctfassets.net/39646iezddpk/33Vgbj5TLslMV9vIEs1TqO/32405518aa96f452c86053328eed2ee6/_white_32Red.png" alt="white 32Red">
                 </a>
-                <a href="https://www.facebook.com/rangersfc/" target="_blank">
-                    <img src="../img/fb.png" alt="Facebook" class="zoom" width="100" height="100">
+                <a href="">
+                    <img src="https://images.ctfassets.net/39646iezddpk/10g7kTi1f1uBcWgrypiZFw/a040edf85b0b84639573e81c1cbc18b6/Tennents_Sponsor.png" alt="Tennents Sponsor- WHITE">
                 </a>
             </div>
-            <a href="https://www.facebook.com/rangersfc/" target="_blank">
 
-                <h4>Si queres recibir las ultimas noticias del club y mantenerte siempre informado suscribite a nuestro newsletter!! Dejanos tu mail y no te pierdas de nada</h4>
+        </div>
+        <div class=" text-center">
 
-                <fieldset>
-                    <legend class="font_white">Email para suscribirte</legend>
-                    <label class="font_white" for="Email">Email</label>
-                    <input type="Email" name="Email" id="Email">
-                </fieldset>
-            </a>
-        </footer>
+            <h2 class="font-w pb-2">Seguinos en nuestras Redes sociales</h2>
+            <div class="footer1">
+                <a href="https://www.instagram.com/rangersfc/ " target="_blank ">
+                    <img class="me-5" src="/img/Instagram.png " alt="Instagram " width="80 " height="80">
+                </a>
+                <a href="https://twitter.com/RangersFC " target="_blank ">
+                    <img class="me-5" src="/img/Tw.png " alt="twitter " width="80 " height="80 ">
+                </a>
+                <a href="https://www.facebook.com/rangersfc/" target="_blank">
+                    <img class="me-5" src="../img/fb.png" alt="Facebook" class="" width="80" height="80">
+                </a>
+            </div>
+        </div>
+
+    </footer>
+    <!-- fin footer -->
 
 
 
 
 
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src=” https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js”>
+    </script>
+    <script src=” https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js ”>
+    </script>
 </body>
 
 </html>
