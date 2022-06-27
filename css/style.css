@@ -1,66 +1,49 @@
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
- /* Colores */
- 
- .bg-blue {
-     background-color: #0033a0e0;
- }
- 
- .bg-bluew {
-     background-color: #1772bc7d;
- }
- /* estilo de nav */
- 
- .nav-right {
-     display: flex;
-     align-items: flex-end;
-     justify-content: flex-end;
-     align-items: center;
-     padding: 0 20px;
- }
- 
- #botonera ul li a {
-     color: aliceblue;
-     font-size: 1.5rem;
-     font-family: 'Raleway', sans-serif;
- }
- /* fuentes */
- 
- .font-w {
-     font-family: 'Raleway', sans-serif;
-     font-size: 1.5rem;
-     font-weight: normal;
-     color: aliceblue;
- }
- 
- .font-b {
-     font-family: 'Raleway', sans-serif;
-     font-size: 1.8rem;
-     font-weight: bold;
-     color: black;
- }
- 
- .f-xl {
-     font-family: 'Roboto', sans-serif;
-     color: aliceblue;
-     font-weight: bold;
-     font-size: 4rem;
- }
- /* footer */
- 
- #footer {
-     background-color: #2d3b55;
- }
- /* animaciones */
- 
- .zoom {
-     transition: transform .2s;
- }
- 
- .zoom:hover {
-     -ms-transform: scale(1.1);
-     /* IE 9 */
-     -webkit-transform: scale(1.1);
-     /* Safari 3-8 */
-     transform: scale(1.1);
- }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap");
+.font-w {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: aliceblue; }
+
+.font-b {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black; }
+
+.f-xl {
+  font-family: 'Roboto', sans-serif;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 4rem; }
+
+#botonera ul li a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: "Raleway", sans-serif; }
+
+.nav-right {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px; }
+
+.bg-blue {
+  background-color: #0033a0e0; }
+
+.bg-bluew {
+  background-color: #1772bc7d; }
+
+.zoom {
+  transition: transform .2s; }
+  .zoom:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1); }
+
+#footer {
+  background-color: #2d3b55; }
