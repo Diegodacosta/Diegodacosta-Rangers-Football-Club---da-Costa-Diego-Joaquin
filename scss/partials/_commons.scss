@@ -1,0 +1,22 @@
+//maps
+$paleta: ( "uno": #0033a0e0, ¡"dos": #1772bc7d, "tres": #ffffff, "cuatro": #000000, );
+//colores
+.bg-blue {
+    background-color: map-get($map: $paleta, $key: "uno")
+}
+
+.bg-bluew {
+    background-color: map-get($map: $paleta, $key: "dos")
+}
+
+//animaciones
+.zoom {
+    transition: transform .2s;
+    &:hover {
+        -ms-transform: scale(1.1);
+        /* IE 9 */
+        -webkit-transform: scale(1.1);
+        /* Safari 3-8 */
+        transform: scale(1.1);
+    }
+}
